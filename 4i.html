@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #e9eefc;
+        }
+
+        /* Top bar */
+        .top-bar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: white;
+            border-bottom: 1px solid #ddd;
+            padding: 5px 20px;
+        }
+
+        .top-left {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .menu-icon {
+            font-size: 22px;
+            cursor: pointer;
+        }
+
+        .home-btn {
+            background-color: #7b1fa2;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            padding: 8px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .top-right {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .cims-btn {
+            background-color: #0e1b2c;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            padding: 6px 15px;
+            cursor: pointer;
+        }
+
+        .profile {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            font-size: 14px;
+            color: #333;
+        }
+
+        .profile img {
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+        }
+
+        /* Card container */
+        .container {
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+            margin-top: 50px;
+        }
+
+        .card {
+            background: white;
+            width: 250px;
+            height: 200px;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            padding: 20px;
+            transition: 0.3s;
+            cursor: pointer;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+        }
+
+        .card img {
+            width: 100px;
+            margin-top: 10px;
+        }
+
+        .card p {
+            margin-top: 15px;
+            font-size: 18px;
+            color: #7b1fa2;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <!-- Top Navigation Bar -->
+    <div class="top-bar">
+        <div class="top-left">
+            <span class="menu-icon">&#9776;</span>
+            <button class="home-btn">HOME</button>
+        </div>
+        <div class="top-right">
+            <button class="cims-btn">CIMS Home</button>
+            <div class="profile">
+                <img src="https://cdn-icons-png.flaticon.com/512/847/847969.png" alt="Profile">
+                <span>SANKAMPALLI LEELA BHARGHAVA ▼</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container">
+        <div class="card" onclick="window.location.href='http://127.0.0.1:5500/4j.html'">
+            <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="Academics">
+            <p>Academics</p>
+        </div>
+
+        <div class="card">
+            <img src="https://cdn-icons-png.flaticon.com/512/3135/3135686.png" alt="Work Request">
+            <p>Work Request</p>
+        </div>
+    </div>
+</body>
+</html>

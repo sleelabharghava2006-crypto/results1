@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CIMS Portal</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #f5f5f5;
+    }
+    header {
+      background: #6e0f74;
+      color: white;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header .title {
+      font-size: 20px;
+      font-weight: bold;
+    }
+    header .user {
+      background: #4b1f7f;
+      padding: 5px 10px;
+      border-radius: 5px;
+    }
+    .container {
+      padding: 20px;
+    }
+    .profile-card {
+      background: #6e0f74;
+      color: white;
+      padding: 20px;
+      border-radius: 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .profile-info {
+      font-size: 16px;
+    }
+    .profile-info h2 {
+      margin: 0;
+    }
+    .cpi-box {
+      background: white;
+      color: #6e0f74;
+      font-weight: bold;
+      font-size: 20px;
+      padding: 15px;
+      border-radius: 10px;
+      text-align: center;
+      min-width: 80px;
+    }
+    .faculty-box {
+      margin-left: 30px;
+      color: white;
+      font-size: 14px;
+    }
+    .tabs {
+      display: flex;
+      margin: 20px 0;
+      border-bottom: 2px solid #ddd;
+    }
+    .tab {
+      margin-right: 20px;
+      padding-bottom: 5px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    .tab.active {
+      border-bottom: 2px solid #6e0f74;
+      color: #6e0f74;
+    }
+    .grades-table {
+      width: 100%;
+      border-collapse: collapse;
+      background: white;
+      border-radius: 10px;
+      overflow: hidden;
+      margin-top: 10px;
+    }
+    .grades-table th, .grades-table td {
+      border: 1px solid #ddd;
+      padding: 10px;
+      text-align: center;
+    }
+    .grades-table th {
+      background: #6e0f74;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="title">CIMS Portal</div>
+  <div class="user">SANKAMPALLI LEELA BHARGHAVA</div>
+</header>
+
+<div class="container">
+  <div class="profile-card">
+    <div class="profile-info">
+      <h2>SANKAMPALLI LEELA BHARGHAVA</h2>
+      <p>CS23BT051</p>
+      <p>B.Tech in Computer Science and Engineering</p>
+      <p>Batch: 2023 | Semester: 05</p>
+    </div>
+    <div class="cpi-box">
+      CPI <br> 6.50
+    </div>
+    <div class="faculty-box">
+      <p><strong>Faculty Advisor</strong></p>
+      <p>Nikhil Devaratha Hegde</p>
+      <p>nikhilh@iitdh.ac.in</p>
+    </div>
+  </div>
+
+  <div class="tabs">
+    <div class="tab">Curriculum</div>
+    <div class="tab">My Forms</div>
+    <div class="tab active">My Exam Results</div>
+  </div>
+
+  <table class="grades-table">
+    <thead>
+      <tr>
+        <th>Semester</th>
+        <th>Course Code</th>
+        <th>Course Name</th>
+        <th>Credits</th>
+        <th>Grade</th>
+        <th>Elective Type</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td>04</td><td>EE 204</td><td>Digital Systems</td><td>6.0</td><td>CC</td><td>Core</td></tr>
+      <tr><td>04</td><td>EE 214</td><td>Digital Circuits Laboratory/Lab</td><td>3.0</td><td>BB</td><td>Core</td></tr>
+      <tr><td>04</td><td>ME 111</td><td>Engineering Graphics Lab</td><td>5.0</td><td>CD</td><td>Core</td></tr>
+      <tr><td>04</td><td>CS 214</td><td>Artificial Intelligence Lab</td><td>3.0</td><td>CD</td><td>Core</td></tr>
+      <tr><td>04</td><td>CS 202</td><td>Automata Theory</td><td>8.0</td><td>CC</td><td>Core</td></tr>
+      <tr><td>04</td><td>CS 209</td><td>Artificial Intelligence</td><td>6.0</td><td>DD</td><td>Core</td></tr>
+      <tr><td>04</td><td>CS 301</td><td>Computer Architecture</td><td>6.0</td><td>CC</td><td>Core</td></tr>
+      <tr><td>04</td><td>CS 311</td><td>Computer Architecture Laboratory</td><td>3.0</td><td>DD</td><td>Core</td></tr>
+      <tr><td>03</td><td>HS 201</td><td>Economics</td><td>6.0</td><td>CD</td><td>Core</td></tr>
+      <tr><td>03</td><td>EE 227</td><td>Data Analysis</td><td>3.0</td><td>CC</td><td>Core</td></tr>
+      <tr><td>03</td><td>CS 203</td><td>Discrete Structures</td><td>6.0</td><td>CC</td><td>Core</td></tr>
+    </tbody>
+  </table>
+</div>
+
+</body>
+</html>
